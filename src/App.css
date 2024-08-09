@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-gd {
+    background-image: linear-gradient(to right, #9a1a87, #e423c8);
+  }
+  .text-gd {
+    background-image: linear-gradient(to right, #9a1a87, #e423c8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .border-gd {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #9a1a87, #e423c8);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+  .icon-gd {
+    background: linear-gradient(
+      to right,
+      #9a1a87,
+      #e423c8
+    ); /* Replace with your desired gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; /* Ensure the gradient is applied to the icon */
+  }
+}
+.text-customPurple {
+  color: #9a1a87;
+}
+
+.icon-gd {
+  background-image: linear-gradient(to right, #9a1a87, #e423c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.bgpink {
+  background-image: url(./assets/pinknoise.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgpurple {
+  background-image: url(./assets/purplenoise.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.balanceBorder {
+  background: lightpink;
+}
+.button-fill {
+  background-image: linear-gradient(to right, #9a1a87, #e423c8);
+}
+.button-fill:hover {
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #9a1a87, #e423c8);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.myshadow {
+  --tw-shadow: 5px 0 15px -3px rgb(0 0 0 / 0.1); /* Adjust horizontal offset, vertical offset, blur radius, and spread */
+  --tw-shadow-colored: 5px 0 15px -3px var(--tw-shadow-color); /* Custom colored shadow */
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.confetti-z-40 {
+  z-index: 40;
+  position: fixed; /* Ensure it's positioned properly */
+}

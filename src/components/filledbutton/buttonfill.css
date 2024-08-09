@@ -1,0 +1,19 @@
+.button-fill{
+    background-image: linear-gradient(to right, #9A1A87, #E423C8);
+    
+    border-radius: 16px;
+  }
+  .button-fill:hover{
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #9A1A87, #E423C8) border-box;
+border-radius: 16px;
+border: 0.5px solid transparent;
+  }
+  .button-fill h1{
+    color: white;
+  }
+  .button-fill:hover h1{
+    background-image: linear-gradient(to right, #9A1A87, #E423C8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

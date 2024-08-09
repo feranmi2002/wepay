@@ -1,0 +1,60 @@
+.input-container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    background-color: pink; /* Adjust as needed */
+  }
+  
+  .input-field {
+    padding: 0.75rem;
+    width: 100%;
+    border-bottom: 0.5px solid darkgray; /* Adjust as needed */
+    outline: none;
+    color: grey; /* Adjust as needed */
+    font-size: 0.875rem; /* Text size for small text */
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: purple; /* Adjust as needed */
+  }
+  
+  .input-field::placeholder {
+    color: transparent; /* Hide placeholder text */
+  }
+  
+  .input-field:focus::placeholder {
+    color: transparent; /* Hide placeholder text on focus */
+  }
+  
+  .input-label {
+    position: absolute;
+    left: 0;
+    color: darkgray; /* Adjust as needed */
+    font-size: 0.75rem; /* Text size for extra small text */
+    transition: all 0.2s ease-in-out;
+    transform: translateY(1.25rem); /* Adjust vertical position */
+  }
+  
+  .input-field:focus ~ .input-label,
+  .input-field:not(:placeholder-shown) ~ .input-label {
+    color: purple; /* Adjust as needed */
+    font-size: 0.75rem; /* Adjust as needed */
+    transform: translateY(-0.5rem); /* Adjust vertical position */
+    left: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .input-field {
+      padding: 0.5rem;
+      font-size: 0.75rem; /* Adjust text size for mobile */
+      border-bottom-width: 1px; /* Increase border width for better visibility */
+    }
+  
+    .input-label {
+      font-size: 0.625rem; /* Adjust text size for mobile */
+    }
+  }
+  
