@@ -2,32 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 
 /* index.css */
-html, body, #root {
-    font-family: "Libre Franklin", sans-serif;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+*,
+body {
+  font-family: "Libre Franklin", sans-serif;
+  margin: 0;
+  padding: 0;
 }
- 
-  
-  * {
-    box-sizing: border-box;
-  }
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
 
-
+* {
+  box-sizing: border-box;
+}
 
 h1 {
   font-size: 56px;
@@ -62,4 +51,3 @@ p {
   font-size: 14px;
   font-weight: 400;
 }
-

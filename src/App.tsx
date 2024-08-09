@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import User from './Pages/User/User'
-import Hero from './Pages/landingpage/LandingPage';
 import Transfer from './Pages/User/pages/transfer/transfer';
 import Account from './Pages/User/pages/Account/Account';
 import Managewallet from './Pages/User/pages/Manage-wallet/Managewallet';
-import './app.css'
+import './App.css'
 import Dashboard from './Pages/User/pages/dashboard/Dashboard';
 import Transactions from './Pages/User/pages/Transactions/Transactions';
 import { FormProvider } from "./Pages/User/pages/transfer/context";
@@ -12,12 +11,13 @@ import Login from './Pages/Login/Login';
 import SignUp from './Pages/Signup/SignUp';
 import VerifyEmail from './Pages/Signup/VerifyEmail';
 import CreateWalletPin from './Pages/Signup/CreateWalletPin';
+import LandingPage from './Pages/landingpage/LandingPage';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Hero />}/>
+        <Route path="/" element={<LandingPage />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/signup" element={<SignUp />}>
         </Route>

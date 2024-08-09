@@ -44,9 +44,14 @@ function Features() {
       <div className=" grid grid-cols-3 gap-20 ">
         {features.map((features, index) => (
           <div className=" flex flex-col items-center text-center " key={index}>
-            <img src={features.image} className=" w-[56px] h-[56px] my-2 " alt="" />
+            <img
+              src={features.image}
+              className=" w-[56px] h-[56px] my-2 "
+              alt=""
+            />
+            {/* <div className=" w-20 h-20 animate-wave transition-all "></div> */}
             <h5 className=" text-purple my-1 ">{features.heading}</h5>
-            <p>{features.sub}</p>
+            <p className=" text-dark ">{features.sub}</p>
           </div>
         ))}
       </div>
